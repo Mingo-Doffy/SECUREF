@@ -1,0 +1,494 @@
+[
+  {
+    "id": "gouvernance_leadership",
+    "name": "Gouvernance et Leadership",
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Votre institution dispose-t-elle d'une politique générale de sécurité des SI signée par le plus haut responsable ?",
+        "options": ["Oui", "Non", "En cours"],
+        "points": { "Oui": 10, "Non": 0, "En cours": 5 },
+        "suggestion": { "Non": "Élaborer et faire signer une politique générale de sécurité des SI par la direction.", "En cours": "Finaliser le processus d'approbation par le plus haut responsable." },
+        "explanation": "Une politique signée par la direction montre l'engagement de l'organisation en matière de sécurité."
+      },
+      {
+        "id": "q2",
+        "text": "Cette politique est-elle affichée dans les locaux de votre structure ?",
+        "options": ["Oui", "Non", "Partiellement"],
+        "points": { "Oui": 10, "Non": 0, "Partiellement": 5 },
+        "suggestion": { "Non": "Afficher la politique dans les locaux pour sensibiliser le personnel.", "Partiellement": "Compléter l'affichage dans toutes les zones concernées." },
+        "explanation": "L'affichage visible renforce la culture de sécurité au sein de l'organisation."
+      },
+      {
+        "id": "q3",
+        "text": "Disposez-vous de politiques spécifiques (contrôle d'accès, sauvegarde, usage cryptographie, etc.) ?",
+        "options": ["Oui, complet", "Partiellement", "Non"],
+        "points": { "Oui, complet": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer des politiques spécifiques pour chaque domaine clé.", "Partiellement": "Compléter les politiques manquantes." },
+        "explanation": "Des politiques spécifiques permettent une gestion ciblée des risques."
+      },
+      {
+        "id": "q4",
+        "text": "La revue des politiques est-elle faite régulièrement ?",
+        "options": ["Oui, annuellement", "Occasionnellement", "Non"],
+        "points": { "Oui, annuellement": 10, "Occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en place un calendrier de revue périodique des politiques.", "Occasionnellement": "Planifier des revues annuelles systématiques." },
+        "explanation": "Une revue régulière assure que les politiques restent pertinentes et efficaces."
+      }
+    ]
+  },
+  {
+    "id": "organisation_ssi",
+    "name": "Organisation de la SSI",
+    "questions": [
+      {
+        "id": "q5",
+        "text": "Disposez-vous d'un Comité Sécurité de l'Information (CSI) formellement établi ?",
+        "options": ["Oui, fonctionnel", "Oui mais non actif", "Non"],
+        "points": { "Oui, fonctionnel": 10, "Oui mais non actif": 5, "Non": 0 },
+        "suggestion": { "Non": "Créer un CSI avec des membres clés et un mandat clair.", "Oui mais non actif": "Activer le CSI avec des réunions régulières." },
+        "explanation": "Le CSI est essentiel pour superviser la stratégie de sécurité."
+      },
+      {
+        "id": "q6",
+        "text": "Un RSSI a-t-il été officiellement désigné par un acte administratif ?",
+        "options": ["Oui", "Oui mais non formalisé", "Non"],
+        "points": { "Oui": 10, "Oui mais non formalisé": 5, "Non": 0 },
+        "suggestion": { "Non": "Désigner un RSSI et formaliser sa nomination.", "Oui mais non formalisé": "Officialiser la désignation par un acte administratif." },
+        "explanation": "Le RSSI est responsable de la mise en œuvre des mesures de sécurité."
+      },
+      {
+        "id": "q7",
+        "text": "Disposez-vous d'analystes SSI (ASSI) identifiés dans votre organisation ?",
+        "options": ["Oui, en nombre suffisant", "Oui mais insuffisant", "Non"],
+        "points": { "Oui, en nombre suffisant": 10, "Oui mais insuffisant": 5, "Non": 0 },
+        "suggestion": { "Non": "Recruter ou former des ASSI pour soutenir le RSSI.", "Oui mais insuffisant": "Renforcer l'équipe des ASSI." },
+        "explanation": "Les ASSI sont cruciaux pour les opérations quotidiennes de sécurité."
+      },
+      {
+        "id": "q8",
+        "text": "Votre institution entretient-elle une coopération active avec l'ANSSI ?",
+        "options": ["Oui, régulière", "Occasionnelle", "Non"],
+        "points": { "Oui, régulière": 10, "Occasionnelle": 5, "Non": 0 },
+        "suggestion": { "Non": "Établir un partenariat avec l'ANSSI pour des conseils et alertes.", "Occasionnelle": "Renforcer la collaboration avec l'ANSSI." },
+        "explanation": "La coopération avec l'ANSSI améliore la posture de sécurité nationale."
+      }
+    ]
+  },
+  {
+    "id": "gestion_risques",
+    "name": "Gestion des risques",
+    "questions": [
+      {
+        "id": "q9",
+        "text": "Avez-vous une vue complète et structurée de votre SI ?",
+        "options": ["Oui, à jour", "Partiellement", "Non"],
+        "points": { "Oui, à jour": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Réaliser une cartographie détaillée du SI.", "Partiellement": "Mettre à jour et compléter la cartographie existante." },
+        "explanation": "Une cartographie précise est la base d'une gestion efficace des risques."
+      },
+      {
+        "id": "q10",
+        "text": "Avez-vous réalisé une étude de risques SSI documentée au cours des 12 derniers mois ?",
+        "options": ["Oui, complète", "Partiellement", "Non"],
+        "points": { "Oui, complète": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Lancer une étude de risques annuelle formalisée.", "Partiellement": "Finaliser l'étude de risques en cours." },
+        "explanation": "Une étude régulière permet d'identifier et de prioriser les risques."
+      },
+      {
+        "id": "q11",
+        "text": "Disposez-vous d'un plan d'action SSI issu de cette étude et validé par le CSI ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer un plan d'action basé sur l'étude de risques.", "En cours": "Soumettre le plan d'action au CSI pour validation." },
+        "explanation": "Un plan d'action validé assure la mise en œuvre des mesures correctives."
+      }
+    ]
+  },
+  {
+    "id": "securite_ressources_humaines",
+    "name": "Sécurité des ressources humaines",
+    "questions": [
+      {
+        "id": "q12",
+        "text": "Disposez-vous d'une charte d'usage des ressources informatiques signée par les agents ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Créer et faire signer une charte d'usage par tous les agents.", "Partiellement": "Obtenir les signatures manquantes." },
+        "explanation": "La charte formalise les obligations des utilisateurs en matière de sécurité."
+      },
+      {
+        "id": "q13",
+        "text": "Les personnels sensibles ont-ils une clause de confidentialité dans leurs contrats ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Intégrer des clauses de confidentialité dans les contrats sensibles.", "Partiellement": "Étendre ces clauses à tous les personnels concernés." },
+        "explanation": "Les clauses de confidentialité protègent les informations sensibles."
+      }
+    ]
+  },
+  {
+    "id": "gestion_actifs",
+    "name": "Gestion des actifs",
+    "questions": [
+      {
+        "id": "q14",
+        "text": "Avez-vous un inventaire à jour des actifs (matériels, logiciels, etc.) ?",
+        "options": ["Oui, complet", "Partiellement", "Non"],
+        "points": { "Oui, complet": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Établir un inventaire complet des actifs.", "Partiellement": "Mettre à jour l'inventaire existant." },
+        "explanation": "Un inventaire à jour est essentiel pour la gestion des actifs."
+      },
+      {
+        "id": "q15",
+        "text": "Chaque actif a-t-il un propriétaire désigné ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Désigner un propriétaire pour chaque actif.", "Partiellement": "Compléter les désignations manquantes." },
+        "explanation": "Un propriétaire assure la responsabilité de la gestion de l'actif."
+      },
+      {
+        "id": "q16",
+        "text": "Disposez-vous d'une cartographie du SI formelle ?",
+        "options": ["Oui, à jour", "Partiellement", "Non"],
+        "points": { "Oui, à jour": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer une cartographie formelle du SI.", "Partiellement": "Mettre à jour la cartographie existante." },
+        "explanation": "La cartographie aide à visualiser et sécuriser l'architecture du SI."
+      },
+      {
+        "id": "q17",
+        "text": "Appliquez-vous un système de classification des informations ?",
+        "options": ["Oui, systématique", "Partiellement", "Non"],
+        "points": { "Oui, systématique": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en place un système de classification.", "Partiellement": "Étendre la classification à tous les actifs." },
+        "explanation": "La classification permet d'adapter les mesures de protection."
+      }
+    ]
+  },
+  {
+    "id": "controle_acces",
+    "name": "Contrôle d'accès",
+    "questions": [
+      {
+        "id": "q18",
+        "text": "Disposez-vous d'une politique de contrôle d'accès documentée ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Élaborer une politique de contrôle d'accès.", "En cours": "Finaliser la politique en cours." },
+        "explanation": "Une politique documentée guide la gestion des accès."
+      },
+      {
+        "id": "q19",
+        "text": "Les droits sont-ils revus régulièrement par le RSSI ?",
+        "options": ["Oui, annuellement", "Occasionnellement", "Non"],
+        "points": { "Oui, annuellement": 10, "Occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en place des revues périodiques des droits.", "Occasionnellement": "Planifier des revues systématiques." },
+        "explanation": "Une revue régulière évite les droits obsolètes ou excessifs."
+      },
+      {
+        "id": "q20",
+        "text": "Les mots de passe sont-ils gérés de façon sécurisée (robustesse, rotation, initialisation) ?",
+        "options": ["Oui, conforme", "Partiellement", "Non"],
+        "points": { "Oui, conforme": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Implémenter une politique de gestion sécurisée des mots de passe.", "Partiellement": "Renforcer les pratiques existantes." },
+        "explanation": "Une gestion sécurisée des mots de passe réduit les risques d'intrusion."
+      },
+      {
+        "id": "q21",
+        "text": "Disposez-vous d'une politique ou procédure d'habilitation des administrateurs du SI ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer une procédure d'habilitation des administrateurs.", "En cours": "Finaliser la procédure en cours." },
+        "explanation": "Une procédure formelle assure que seuls des personnels autorisés ont des droits élevés."
+      }
+    ]
+  },
+  {
+    "id": "cryptographie",
+    "name": "Cryptographie",
+    "questions": [
+      {
+        "id": "q22",
+        "text": "Disposez-vous d'une politique d'utilisation de la cryptographie documentée ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Élaborer une politique cryptographique.", "En cours": "Finaliser la politique en cours." },
+        "explanation": "Une politique cryptographique guide l'usage sécurisé des technologies."
+      },
+      {
+        "id": "q23",
+        "text": "Cette politique est-elle alignée sur les exigences légales (ANSSI, normes nationales) ?",
+        "options": ["Oui, conforme", "Partiellement", "Non"],
+        "points": { "Oui, conforme": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre à jour la politique pour respecter les normes.", "Partiellement": "Alignement complet avec les exigences légales." },
+        "explanation": "Le respect des normes assure la légalité et l'efficacité des mesures."
+      },
+      {
+        "id": "q24",
+        "text": "Les rôles pour la gestion des moyens cryptographiques sont-ils définis ?",
+        "options": ["Oui, clairement", "Partiellement", "Non"],
+        "points": { "Oui, clairement": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Définir les rôles et responsabilités pour la cryptographie.", "Partiellement": "Clarifier les rôles manquants." },
+        "explanation": "Des rôles définis évitent les conflits et les lacunes dans la gestion."
+      }
+    ]
+  },
+  {
+    "id": "securite_physique",
+    "name": "Sécurité physique et environnementale",
+    "questions": [
+      {
+        "id": "q25",
+        "text": "Vos locaux sont-ils zonés par niveau de sensibilité (zones sécurisées) ?",
+        "options": ["Oui, conforme", "Partiellement", "Non"],
+        "points": { "Oui, conforme": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en place un zonage sécurisé des locaux.", "Partiellement": "Compléter le zonage existant." },
+        "explanation": "Le zonage adapte les mesures de sécurité à la sensibilité des zones."
+      },
+      {
+        "id": "q26",
+        "text": "Disposez-vous d'un contrôle physique d'accès pour chaque zone ?",
+        "options": ["Oui, pour toutes", "Partiellement", "Non"],
+        "points": { "Oui, pour toutes": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Instaurer un contrôle d'accès physique pour les zones sensibles.", "Partiellement": "Étendre les contrôles à toutes les zones." },
+        "explanation": "Un contrôle d'accès physique limite les accès non autorisés."
+      },
+      {
+        "id": "q27",
+        "text": "Avez-vous des procédures documentées de sortie, de restitution et de mise au rebut des matériels ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer des procédures pour la gestion de fin de vie des actifs.", "En cours": "Finaliser les procédures en cours." },
+        "explanation": "Des procédures formelles évitent les fuites d'information lors du rebut."
+      }
+    ]
+  },
+  {
+    "id": "exploitation_maintenance",
+    "name": "Exploitation et maintenance",
+    "questions": [
+      {
+        "id": "q28",
+        "text": "Disposez-vous de procédures d'exploitation formalisées (sauvegarde, redémarrage, planification) ?",
+        "options": ["Oui, complètes", "Partiellement", "Non"],
+        "points": { "Oui, complètes": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Élaborer des procédures d'exploitation pour les activités clés.", "Partiellement": "Compléter les procédures existantes." },
+        "explanation": "Des procédures standardisées améliorent la résilience du SI."
+      },
+      {
+        "id": "q29",
+        "text": "Les dispositifs antivirus/malwares sont-ils généralisés et mis à jour ?",
+        "options": ["Oui, à jour", "Partiellement", "Non"],
+        "points": { "Oui, à jour": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Déployer une solution antivirus sur tous les équipements.", "Partiellement": "Mettre à jour et étendre la couverture." },
+        "explanation": "Une protection à jour réduit les risques d'infection."
+      },
+      {
+        "id": "q30",
+        "text": "Les événements sont-ils journalisés et horodatés de manière centralisée ?",
+        "options": ["Oui, systématique", "Partiellement", "Non"],
+        "points": { "Oui, systématique": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en place un système centralisé de journalisation.", "Partiellement": "Améliorer la centralisation et l'horodatage." },
+        "explanation": "La journalisation centralisée facilite le monitoring et l'analyse."
+      },
+      {
+        "id": "q31",
+        "text": "Disposez-vous de procédure pour la gestion des postes de travail ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer des procédures pour la gestion des postes.", "En cours": "Finaliser les procédures en cours." },
+        "explanation": "Des procédures standardisées assurent une configuration sécurisée."
+      },
+      {
+        "id": "q32",
+        "text": "Disposez-vous d'une procédure de gestion des vulnérabilités techniques ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Élaborer une procédure pour identifier et corriger les vulnérabilités.", "En cours": "Finaliser la procédure en cours." },
+        "explanation": "Une gestion proactive des vulnérabilités réduit les risques d'exploitation."
+      },
+      {
+        "id": "q33",
+        "text": "Avez-vous une segmentation du réseau en domaines sécurisés (public, serveurs, interne) ?",
+        "options": ["Oui, optimale", "Partiellement", "Non"],
+        "points": { "Oui, optimale": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Segmenter le réseau pour isoler les zones critiques.", "Partiellement": "Optimiser la segmentation existante." },
+        "explanation": "La segmentation limite la propagation des incidents."
+      },
+      {
+        "id": "q34",
+        "text": "Vos points d'accès wifi sont-ils isolés jusqu'au pare-feu ?",
+        "options": ["Oui", "Partiellement", "Non"],
+        "points": { "Oui": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Isoler les points d'accès wifi pour réduire les risques.", "Partiellement": "Renforcer l'isolation des réseaux wifi." },
+        "explanation": "L'isolation protège le réseau interne des attaques via le wifi."
+      },
+      {
+        "id": "q35",
+        "text": "Les communications avec l'extérieur sont-elles chiffrées selon leur niveau de sensibilité ?",
+        "options": ["Oui, systématique", "Partiellement", "Non"],
+        "points": { "Oui, systématique": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Implémenter le chiffrement pour les communications sensibles.", "Partiellement": "Étendre le chiffrement à toutes les communications critiques." },
+        "explanation": "Le chiffrement protège la confidentialité des données en transit."
+      },
+      {
+        "id": "q36",
+        "text": "Disposez-vous d'accords de transfert de données avec les tiers ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Établir des accords formels pour les transferts de données.", "Partiellement": "Compléter les accords manquants." },
+        "explanation": "Des accords formels encadrent les responsabilités et les mesures de sécurité."
+      }
+    ]
+  },
+  {
+    "id": "developpement_acquisition",
+    "name": "Développement & acquisition",
+    "questions": [
+      {
+        "id": "q37",
+        "text": "Les exigences de sécurité sont-elles intégrées dès la phase de conception des projets ?",
+        "options": ["Oui, systématique", "Partiellement", "Non"],
+        "points": { "Oui, systématique": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Adopter une approche 'Security by Design' pour les projets.", "Partiellement": "Renforcer l'intégration des exigences de sécurité." },
+        "explanation": "L'intégration précoce réduit les coûts et les risques liés à la sécurité."
+      },
+      {
+        "id": "q38",
+        "text": "Le RSSI/ASSI est-il impliqué dans tous les projets informatiques ?",
+        "options": ["Oui, systématique", "Occasionnellement", "Non"],
+        "points": { "Oui, systématique": 10, "Occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Impliquer systématiquement le RSSI/ASSI dans les projets.", "Occasionnellement": "Étendre l'implication à tous les projets." },
+        "explanation": "L'expertise du RSSI/ASSI assure la conformité aux normes de sécurité."
+      },
+      {
+        "id": "q39",
+        "text": "Les contrats avec les sous-traitants prévoient-ils des clauses SSI obligatoires ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Intégrer des clauses SSI dans tous les contrats avec les sous-traitants.", "Partiellement": "Compléter les clauses manquantes." },
+        "explanation": "Des clauses SSI protègent les données et les systèmes confiés aux tiers."
+      },
+      {
+        "id": "q40",
+        "text": "Réalisez-vous des audits de sécurité applicative périodiquement ?",
+        "options": ["Oui, régulièrement", "Occasionnellement", "Non"],
+        "points": { "Oui, régulièrement": 10, "Occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Planifier des audits de sécurité applicative réguliers.", "Occasionnellement": "Mettre en place un calendrier d'audits systématiques." },
+        "explanation": "Les audits identifient les vulnérabilités avant leur exploitation."
+      }
+    ]
+  },
+  {
+    "id": "relations_fournisseurs",
+    "name": "Relations fournisseurs",
+    "questions": [
+      {
+        "id": "q41",
+        "text": "Les fournisseurs ont-ils des obligations de sécurité formalisées dans les contrats ?",
+        "options": ["Oui, pour tous", "Partiellement", "Non"],
+        "points": { "Oui, pour tous": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Inclure des obligations de sécurité dans tous les contrats fournisseurs.", "Partiellement": "Étendre ces obligations à tous les fournisseurs." },
+        "explanation": "Des obligations formalisées assurent la sécurité des services externalisés."
+      },
+      {
+        "id": "q42",
+        "text": "Des mesures de sécurité sont-elles imposées pour le traitement d'information sous-traité ?",
+        "options": ["Oui, systématique", "Partiellement", "Non"],
+        "points": { "Oui, systématique": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Définir et imposer des mesures de sécurité pour la sous-traitance.", "Partiellement": "Renforcer les mesures existantes." },
+        "explanation": "Des mesures spécifiques protègent les données confiées aux tiers."
+      }
+    ]
+  },
+  {
+    "id": "gestion_incidents",
+    "name": "Gestion des incidents",
+    "questions": [
+      {
+        "id": "q43",
+        "text": "Disposez-vous d'une procédure de gestion des incidents formelle ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Élaborer une procédure formelle de gestion des incidents.", "En cours": "Finaliser la procédure en cours." },
+        "explanation": "Une procédure formelle assure une réponse rapide et efficace aux incidents."
+      },
+      {
+        "id": "q44",
+        "text": "Les incidents sont-ils remontés au CI-CERT en cas de gravité ?",
+        "options": ["Oui, systématique", "Occasionnellement", "Non"],
+        "points": { "Oui, systématique": 10, "Occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Établir un processus de remontée des incidents graves au CI-CERT.", "Occasionnellement": "Systématiser la remontée pour tous les incidents critiques." },
+        "explanation": "La remontée au CI-CERT permet une réponse coordonnée aux cybermenaces."
+      },
+      {
+        "id": "q45",
+        "text": "Un registre des incidents est-il tenu à jour ?",
+        "options": ["Oui, complet", "Partiellement", "Non"],
+        "points": { "Oui, complet": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Créer et maintenir un registre des incidents.", "Partiellement": "Compléter et mettre à jour le registre existant." },
+        "explanation": "Un registre à jour facilite l'analyse et la prévention des incidents."
+      }
+    ]
+  },
+  {
+    "id": "continuite_activite",
+    "name": "Continuité d'activité",
+    "questions": [
+      {
+        "id": "q46",
+        "text": "Disposez-vous d'un plan de continuité des activités (PCA) testé régulièrement ?",
+        "options": ["Oui, testé annuellement", "Testé occasionnellement", "Non"],
+        "points": { "Oui, testé annuellement": 10, "Testé occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer et tester un PCA pour assurer la continuité.", "Testé occasionnellement": "Planifier des tests annuels systématiques." },
+        "explanation": "Un PCA testé assure la résilience de l'organisation en cas de crise."
+      },
+      {
+        "id": "q47",
+        "text": "Les exigences SSI sont-elles maintenues en situation de crise ?",
+        "options": ["Oui, intégrées", "Partiellement", "Non"],
+        "points": { "Oui, intégrées": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Intégrer les exigences SSI dans les plans de crise.", "Partiellement": "Renforcer l'intégration des mesures SSI." },
+        "explanation": "Le maintien des mesures SSI en crise évite les compromissions."
+      },
+      {
+        "id": "q48",
+        "text": "Disposez-vous d'un plan de reprise des activités (PRA) testé régulièrement ?",
+        "options": ["Oui, testé annuellement", "Testé occasionnellement", "Non"],
+        "points": { "Oui, testé annuellement": 10, "Testé occasionnellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Développer et tester un PRA pour les systèmes critiques.", "Testé occasionnellement": "Planifier des tests annuels du PRA." },
+        "explanation": "Un PRA testé assure la récupération rapide des systèmes après un incident."
+      }
+    ]
+  },
+  {
+    "id": "conformite",
+    "name": "Conformité",
+    "questions": [
+      {
+        "id": "q49",
+        "text": "Avez-vous fait auditer votre SI par l'ANSSI ?",
+        "options": ["Oui, récemment", "Il y a plus de 2 ans", "Non"],
+        "points": { "Oui, récemment": 10, "Il y a plus de 2 ans": 5, "Non": 0 },
+        "suggestion": { "Non": "Planifier un audit ANSSI pour évaluer la conformité.", "Il y a plus de 2 ans": "Programmer un nouvel audit pour mise à jour." },
+        "explanation": "Un audit ANSSI valide la conformité aux exigences nationales."
+      },
+      {
+        "id": "q50",
+        "text": "Disposez-vous d'un correspondant à la protection des données désigné ?",
+        "options": ["Oui", "En cours", "Non"],
+        "points": { "Oui": 10, "En cours": 5, "Non": 0 },
+        "suggestion": { "Non": "Désigner un correspondant à la protection des données.", "En cours": "Finaliser la désignation officielle." },
+        "explanation": "Un correspondant assure le respect des règles de protection des données."
+      },
+      {
+        "id": "q51",
+        "text": "Votre organisation respecte-t-elle les règles de protection des données personnelles, cryptographie ?",
+        "options": ["Oui, conforme", "Partiellement", "Non"],
+        "points": { "Oui, conforme": 10, "Partiellement": 5, "Non": 0 },
+        "suggestion": { "Non": "Mettre en conformité les pratiques avec les règles légales.", "Partiellement": "Combler les écarts de conformité restants." },
+        "explanation": "Le respect des règles légales évite les sanctions et protège les données."
+      }
+    ]
+  }
+]
